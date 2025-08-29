@@ -1,0 +1,328 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh; /* allow page to grow and scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(231, 231, 231);
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.heading {
+    color: green;
+}
+.title {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+.container {
+    min-height: 600px; /* base min height, but allow to expand */
+    width: 1100px;
+    background-color: white;
+    box-shadow: 8px 8px 20px rgb(128, 128, 128);
+    position: relative;
+    overflow: visible; /* allow content to define height */
+}
+.Formhead{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: medium;
+}
+.btn {
+    height: 60px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 10px 10px 30px rgb(254, 215, 188);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup-box {
+    height: 100%;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+}
+.login-box {
+    gap: 50px;
+}
+.signup-box {
+    gap: 30px;
+}
+.ele {
+    height: 40px;
+    width: 900px;
+    outline: none;
+    border: none;
+    color: rgb(77, 77, 77);
+    background-color: rgb(240, 240, 240);
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+/* File input: center the upload button vertically */
+input[type="file"].ele {
+    padding-left: 16px; /* reduce left padding so button/text aren't cramped */
+    padding-right: 16px;
+    display: inline-flex; /* center button + filename */
+    align-items: center;
+    padding-top: 5px;
+}
+
+/* Two-column row for paired fields (e.g., Age & Sex) */
+.row-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.field label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+}
+/* Validation styles */
+.field .error {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #d93025; /* red */
+}
+.invalid {
+    outline: 2px solid #d93025 !important;
+}
+/* Ensure inputs/selects in the two-column layout fill the column width */
+.row-2 .ele {
+    width: 100%;
+}
+
+span {
+        color: #d93025;
+}
+.clkbtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,
+            rgb(255, 195, 110),
+            rgb(255, 146, 91));
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color: #1f2937;
+    transition: transform .12s ease, box-shadow .2s ease, filter .2s ease, background-position .2s ease;
+    background-size: 120% 100%;
+    background-position: 0% 50%;
+}
+.clkbtn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(91, 209, 255, 0.35);
+}
+/* -------- Success Page Styles -------- */
+:root{
+    --success-700:#1b5e20;
+    --success-600:#2e7d32;
+    --success-500:#43a047;
+    --success-50:#e8f5e9;
+    --neutral-700:#4d4d4d;
+    --neutral-500:#6b7280;
+}
+
+.success-wrap{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    padding: 48px 20px; 
+}
+.success-message{
+    width: min(820px, 92%);
+    background: radial-gradient(1200px 300px at 50% -100px, rgba(46,125,50,0.10), transparent 60%), #ffffff;
+    border: 1px solid rgba(46,125,50,0.12);
+    border-radius: 16px;
+    padding: 36px 28px 40px;
+    box-shadow: 0 10px 30px rgba(46,125,50,0.12);
+    text-align:center;
+    animation: fadeUp .6s ease-out both;
+}
+.success-icon{
+    height: 64px; width: 64px; margin: 0 auto 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--success-600), var(--success-500));
+    position: relative;
+    box-shadow: 0 8px 22px rgba(46,125,50,.35);
+    animation: popIn .5s ease-out .1s both;
+}
+.success-icon::before{ /* checkmark */
+    content: "";
+    position:absolute; inset:0;
+    background: center/28px 28px no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>");
+}
+.success-title{
+    font-size: clamp(20px, 3.2vw, 28px);
+    font-weight: 700;
+    color: var(--success-600);
+    letter-spacing:.3px;
+    margin: 8px 0 10px;
+}
+.success-text{ color: var(--neutral-700); line-height: 1.7; }
+.success-text + .success-text{ margin-top: 6px; }
+
+.success-divider{ height:1px; width: 160px; background: linear-gradient(90deg, transparent, var(--success-500), transparent); margin: 28px auto; opacity:.6; animation: shimmer 1.8s linear infinite; }
+
+.success-signoff{ color: var(--neutral-500); white-space: pre-line; }
+
+.success-actions{ margin-top: 28px; display:flex; justify-content:center; gap:12px; }
+.success-btn{
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(46,125,50,.25);
+    background: linear-gradient(135deg, #ffffff, var(--success-50));
+    color: var(--success-700);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .2s ease;
+}
+.success-btn:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px rgba(46,125,50,.18); }
+
+@keyframes fadeUp{ from{ opacity:0; transform: translateY(8px);} to{ opacity:1; transform:none;} }
+@keyframes popIn{ 0%{ transform: scale(.6); opacity:0;} 60%{ transform: scale(1.05); opacity:1;} 100%{ transform: scale(1);} }
+@keyframes shimmer{ 0%{ filter:brightness(.9);} 50%{ filter:brightness(1.2);} 100%{ filter:brightness(.9);} }
+/* For Responsiveness of the page */
+@media screen and (max-width: 650px) {
+    .container {
+        min-height: 600px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .login,
+    .signup {
+        font-size: 19px;
+    }
+    .slider {
+        height: 50px;
+        width: 100px;
+        left: 50px;
+    }
+    .moveslider {
+        left: 150px;
+    }
+    .form-section {
+        height: auto; /* let content size define height */
+        width: 100%;
+    }
+    /* Stack Age & Sex vertically on small screens */
+    .row-2 {
+        grid-template-columns: 1fr;
+    }
+    .form-section-move {
+        left: -300px;
+    }
+    .login-box,
+    .signup-box {
+        height: 100%;
+        width: 300px;
+    }
+    .ele {
+        height: 50px;
+        width: 250px;
+        font-size: 15px;
+    }
+    .clkbtn {
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+        min-height: 600px;
+        width: 250px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .btn {
+        height: 50px;
+        width: 200px;
+        margin: 20px auto;
+    }
+    .login,
+    .signup {
+        font-size: 19px;
+    }
+    .slider {
+        height: 50px;
+        width: 100px;
+        left: 27px;
+    }
+    .moveslider {
+        left: 127px;
+    }
+    .form-section {
+        height: auto;
+        width: 100%;
+    }
+    /* Stack Age & Sex vertically on very small screens */
+    .row-2 {
+        grid-template-columns: 1fr;
+    }
+    .form-section-move {
+        left: -250px;
+    }
+
+    .login-box,
+    .signup-box {
+        height: 100%;
+        width: 250px;
+    }
+
+    .ele {
+        height: 50px;
+        width: 220px;
+        font-size: 15px;
+    }
+
+    .clkbtn {
+        height: 50px;
+        width: 130px;
+        font-size: 19px;
+    }
+}

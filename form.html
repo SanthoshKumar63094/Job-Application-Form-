@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rodeo Digital Careers </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">Rodeo Digital Careers</h1>
+        <h3 class="title">Job Application Form</h3>
+    </header>
+
+    <div class="container">
+        <div id="registerpage">
+
+            <h2 class="Formhead">Interested candidates can drop your details here</h2>
+            
+            <div class="form-section">
+                <div class="signup-box">
+                    
+                    <!-- Name & Email -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" id="name" class="ele" placeholder="Enter your name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email Address <span>*</span></label>
+                            <input type="email" id="email" class="ele" placeholder="youremail@email.com">
+                        </div>
+                    </div>
+
+                    <!-- Qualification -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="qualification">Qualification <span>*</span></label>
+                            <input type="text" id="qualification" class="ele" placeholder="Enter your highest qualification">
+                        </div>
+                        <div class="field">
+                            <label for="graduation">Year of Graduation <span>*</span></label>
+                            <input type="number" id="graduation" class="ele" placeholder="ex: 2024" min="1970" max="3000"> 
+                        </div>
+                    </div>
+
+                    <!-- Age & Gender -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="age">Age <span>*</span></label>
+                            <input type="number" id="age" class="ele" placeholder="ex: 23" min="0">
+                        </div>
+                        <div class="field">
+                            <label for="gender">Gender <span>*</span></label>
+                            <select id="gender" class="ele">
+                                <option value="">Please Select</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="prefer_not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="location">Your Location <span>*</span></label>
+                            <input type="text" id="location" class="ele" placeholder="ex: Chennai">
+                        </div>
+                        <div class="field">
+                            <label for="relocate">Can you relocate to Coimbatore? <span>*</span></label>
+                            <select id="relocate" class="ele">
+                                <option value="">Please Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Experience -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="number">Contact No <span>*</span></label>
+                            <input type="number" id="number" class="ele" placeholder="Your Mobile Number">
+                        </div>
+                        <div class="field">
+                            <label for="experience">Experience in Years <span>*</span></label>
+                            <select id="experience" class="ele">
+                                <option value="">Please Select</option>
+                                <option value="none">-None-</option>
+                                <option value="fresher">Fresher</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="1-2">1-2 years</option>
+                                <option value="2-4">2-4 years</option>
+                                <option value="4-6">4-6 years</option>
+                                <option value="6-10">6-10 years</option>
+                                <option value="10+">More than 10 years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Notice Period & CTC -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="notice">Notice Period <span>*</span></label>
+                            <select id="notice" class="ele">
+                                <option value="">Please Select</option>
+                                <option value="na">Not Applicable</option>
+                                <option value="immediate">Immediate</option>
+                                <option value="1">Within 1 Month</option>
+                                <option value="2">Within 2 Months</option>
+                                <option value="3">Within 3 Months</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="ctc">Current CTC (In LPA) <span>*</span></label>
+                            <select id="ctc" class="ele">
+                                <option value="">Please Select</option>
+                                <option value="na">-NA-</option>
+                                <option value="1-2">1-2 LPA</option>
+                                <option value="2-4">2-4 LPA</option>
+                                <option value="4-6">4-6 LPA</option>
+                                <option value="6-8">6-8 LPA</option>
+                                <option value="8-10">8-10 LPA</option>
+                                <option value="10+">More than 10 LPA</option>
+                                <option value="20+">More than 20 LPA</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Resume -->
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="skills">Skill Set <span>*</span></label>
+                            <input type="text" id="skills" class="ele" placeholder="Enter your skills">
+                        </div>
+                        <div class="field">
+                            <label for="resume">Upload Resume <span>*</span></label>
+                            <input type="file" id="resume" class="ele">
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <button class="clkbtn">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
